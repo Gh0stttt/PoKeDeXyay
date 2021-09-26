@@ -6,11 +6,21 @@
 }
 
 .pokemon {
-
+  position: relative;
+  height: 120px;
 }
 
-.pokemon:hover {
+.pokemon img {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  height: 110px;
+}
 
+.pokemon p {
+  position: absolute;
+  top: 5px;
+  left: 20px;
 }
 
 .pagination {
@@ -69,4 +79,49 @@
   font-size: 18px;
   font-weight: 600;
   color: black;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.form input {
+  padding: 15px;
+  border: none;
+  background-color: #eee;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 18px;
+  outline: none;
+}
+
+.form button {
+  font-size: 18px;
+  background-color: goldenrod;
+  color: #fff;
+  font-weight: 800;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition-duration: 0.2s;
+}
+
+.form button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  padding: 0 15px;
+  font-size: 20px;
+  text-transform:uppercase;
+  text-align:center;
+  margin:0;
+  margin-bottom:15px;
+  font-weight:800px;
 }
