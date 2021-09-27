@@ -30,47 +30,57 @@
   padding: 0 15px;
 }
 
-.pagination button {
-
-}
-
 .button {
-  border-radius: 8px;
-  padding: 15px;
-  font-size: 17px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  background-color: #222224;
-  transition-duration: 0.5s;
-  color: #fff;
+  border-radius: 7px;
+  padding: 17px;
+  font-size: 19px;
+  font-weight: 660;
+  letter-spacing: 1.5px;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.8s;
+  color: black;
   text-align: center;
   text-transform: capitalize;
 }
 
-.PrevNextButton {
-  border-radius: 8px;
-  padding: 15px;
-  font-size: 17px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  background-color: rgb(151, 149, 149);
-  transition-duration: 0.5s;
+.buttonNext {
+  border-radius: 7px;
+  padding: 17px;
+  font-size: 19px;
+  font-weight: 660;
+  letter-spacing: 1.5px;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.8s;
   color: rgb(0, 0, 0);
   text-align: center;
   text-transform: capitalize;
 }
 
-.button:hover {
-  background-color: #ee1515;
+.buttonNext:hover {
+  background-color: rgb(143, 144, 155);
   cursor: pointer;
 }
 
-.PrevNextButton:disabled {
-  color:red;
+.buttonNext:disabled {
+  color: rgb(66, 61, 61);
 }
 
-.PrevNextButton:disabled:hover {
-  background-color: #eee;
+.buttonNext:disabled:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: rgb(209, 209, 209);
+  cursor: pointer;
+}
+
+.button:disabled {
+  color: #999;
+}
+
+.button:disabled:hover {
+  background-color: rgb(255, 0, 0);
   cursor: not-allowed;
 }
 
@@ -78,7 +88,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  color: black;
+  color: #ee1515;
 }
 
 .form {
@@ -119,9 +129,16 @@
   color: red;
   padding: 0 15px;
   font-size: 20px;
-  text-transform:uppercase;
-  text-align:center;
-  margin:0;
-  margin-bottom:15px;
-  font-weight:800px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.error-container {
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
